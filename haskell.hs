@@ -9,24 +9,19 @@ main = putStrLn "Hello World"
 
 always5 :: Int 
 always5 = 5
-
-
 sumOfNums = sum[1..1000]
-
 addEx = 5 + 4
 subEx = 5-4
 multEx = 5*4
 divEx = 5/4
 modEx = mod 8 4
-
 negNumb = 5 + (-4)
 
 -- sqrt need float number
 num9 = 9 :: Int
 -- sqrt0f9 = sqrt (fromIntergral num9)
 
---  important function to know
-
+--  Math Functions 
 piValue = pi
 expodentiel9 = exp 9
 logOf9 = log 9
@@ -35,7 +30,6 @@ truncateVal = truncate 9.999
 roundVal = round 9.999
 ceilingVal = ceiling 9.999
 floorVal = floor 9.999
-
 tureAndFalse = True && False
 trueOrFalse = True || False
 notTrue = not(True)
@@ -54,4 +48,23 @@ secondPrime = morePrimes2 !! 1 -- Return the value of index 1
 firstPrime = head morePrimes2
 lastPrime = last morePrimes2
 primeInit = init morePrimes2 -- return array without the last value
-first3Prime = take 3 morePrimes2
+first3Prime = take 3 morePrimes2 -- return the 3 first value of the array
+removePrimes = drop 3 morePrimes2 --return the array without the 3 first values
+is7inList = 7 `elem` morePrimes2 -- if 7 in the list return True
+maxPrime = maximum morePrimes2 -- return the highest value in the list
+minPrime = minimum minPrimes2 -- return the lower // // //
+
+-- CREATE RANGE
+zeroToTen = [0..10]
+evenList =[2,4..20] -- return array 2 to 20 with pair numbers
+letterList = ["A","C".."Z"]
+-- Exercice 
+
+ovenTime :: Integer
+ovenTime = 40;
+
+prepTime :: Integer -> Integer
+prepTime numOfLayers = 2 * numOfLayers
+
+elapsedTimeInMinutes :: Integer -> Integer -> Integer
+elapsedTimeInMinutes numOfLayers ovenTime = prepTime numOfLayers + ovenTime
