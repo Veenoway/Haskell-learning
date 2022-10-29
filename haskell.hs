@@ -1,0 +1,57 @@
+import Data.List
+import System.IO
+import Prelude
+-- Int -2^63 2^63
+maxInt = maxBound :: Int
+
+main :: IO()
+main = putStrLn "Hello World"
+
+always5 :: Int 
+always5 = 5
+
+
+sumOfNums = sum[1..1000]
+
+addEx = 5 + 4
+subEx = 5-4
+multEx = 5*4
+divEx = 5/4
+modEx = mod 8 4
+
+negNumb = 5 + (-4)
+
+-- sqrt need float number
+num9 = 9 :: Int
+-- sqrt0f9 = sqrt (fromIntergral num9)
+
+--  important function to know
+
+piValue = pi
+expodentiel9 = exp 9
+logOf9 = log 9
+squared9 = 9 ** 2
+truncateVal = truncate 9.999
+roundVal = round 9.999
+ceilingVal = ceiling 9.999
+floorVal = floor 9.999
+
+tureAndFalse = True && False
+trueOrFalse = True || False
+notTrue = not(True)
+
+
+-- ARRAY
+primeNumbers = [5,4,32,4]
+morePrimes = primeNumbers ++ [14,25,36] -- Add value at the end
+favNums = 2 : 7 : 32: [] 
+multiList = [[3,4,5,56],[3,6,44,3]]
+morePrimes2 = 2 : primeNumbers -- Add value from the start of the array
+lengthPrime = length morePrimes2 
+reversePrime = reverse morePrimes2
+isArrayEmpty = null morePrimes2
+secondPrime = morePrimes2 !! 1 -- Return the value of index 1 
+firstPrime = head morePrimes2
+lastPrime = last morePrimes2
+primeInit = init morePrimes2 -- return array without the last value
+first3Prime = take 3 morePrimes2
