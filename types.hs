@@ -1,0 +1,5 @@
+-- [Char] === list of character
+-- Int === Integer with a minnimum and a maximum value 2147483647 and -2147483647
+-- Integer === Integer without limits 
+-- Float === Number with "," 25.132742
+-- Double === Float with double precision 25.132741228718345
