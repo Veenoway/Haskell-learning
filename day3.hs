@@ -58,3 +58,33 @@ rateWalkDistance distance
   | distance < 3 = Yes
   | distance <= 5 = Maybe
   | otherwise = No
+
+  -- Start here to find the problems without the temptation of glimpsing at the solutions
+-- Problem 1: https://www.codewars.com/kata/5863f97fb3a675d9a700003f
+-- Problem 2: https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d
+-- Problem 3: https://www.codewars.com/kata/5949481f86420f59480000e7
+-- Problem 4: https://www.codewars.com/kata/56e3cd1d93c3d940e50006a4
+-- Problem 5: https://www.codewars.com/kata/563b662a59afc2b5120000c6
+-- Problem 6: https://www.codewars.com/kata/609eee71109f860006c377d1
+-- Problem 7: https://www.codewars.com/kata/60bcef3c4a3ef30015bc05dd
+-- Problem 8: https://www.codewars.com/kata/56ed20a2c4e5d69155000301
+
+-- Accumulator
+
+fac n  = aux n 1
+    where 
+        aux n acc = aux 
+            | n <= 1 = acc
+            | otherwise = aux (n-1) (n * acc)
+
+-- This above is equal to 
+-- fac n:
+--     acc = 1;
+--     while(True) {
+--         if(n <= 1) {
+--             return acc
+--         } else {
+--             n= n-1;
+--             acc = n*acc
+--         }
+--     }
