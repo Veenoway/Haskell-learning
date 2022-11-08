@@ -52,12 +52,13 @@ first3Prime = take 3 morePrimes2 -- return the 3 first value of the array
 removePrimes = drop 3 morePrimes2 --return the array without the 3 first values
 is7inList = 7 `elem` morePrimes2 -- if 7 in the list return True
 maxPrime = maximum morePrimes2 -- return the highest value in the list
-minPrime = minimum minPrimes2 -- return the lower // // //
+-- minPrime = minimum minPrimes2 -- return the lower // // //
 
 -- CREATE RANGE
 zeroToTen = [0..10]
 evenList =[2,4..20] -- return array 2 to 20 with pair numbers
 letterList = ["A","C".."Z"]
+
 -- Exercice 
 
 ovenTime :: Integer
