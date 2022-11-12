@@ -69,3 +69,5 @@ prepTime numOfLayers = 2 * numOfLayers
 
 elapsedTimeInMinutes :: Integer -> Integer -> Integer
 elapsedTimeInMinutes numOfLayers ovenTime = prepTime numOfLayers + ovenTime
+elapsedTimeInMinutes' :: Integer -> Integer -> Integer
+elapsedTimeInMinutes' numOfLayers ovenTime = prepTime numOfLayers + ovenTime
