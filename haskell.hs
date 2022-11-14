@@ -71,3 +71,14 @@ elapsedTimeInMinutes :: Integer -> Integer -> Integer
 elapsedTimeInMinutes numOfLayers ovenTime = prepTime numOfLayers + ovenTime
 elapsedTimeInMinutes' :: Integer -> Integer -> Integer
 elapsedTimeInMinutes' numOfLayers ovenTime = prepTime numOfLayers + ovenTime
+
+-- Exercice 1 : Expressions de liste. Une liste s’écrit entre crochets, avec les éléments de la liste séparés par
+-- des virgules.
+-- 1. Rappelez ce que font les opérateurs [],:,++,.. et les fonctions head, tail, reverse.
+-- 2. Évaluez les expressions de liste suivantes :
+-- (a) 1:[2]
+-- (b) [3,4]++[1,2]
+-- (c) [3..10]
+-- (d) tail [1..4] ++ 5:[]
+-- (e) head [1..4] : [5]
+-- (f) reverse [1..4] ++ [5]
