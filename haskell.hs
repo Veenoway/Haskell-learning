@@ -82,3 +82,9 @@ elapsedTimeInMinutes' numOfLayers ovenTime = prepTime numOfLayers + ovenTime
 -- (d) tail [1..4] ++ 5:[]
 -- (e) head [1..4] : [5]
 -- (f) reverse [1..4] ++ [5]
+
+
+sumStr' :: String -> String -> String
+sumStr' a b = show $ readInt a + readInt b -- everything on the right of $ will be take first
+readInt :: String -> Int
+readInt = read
