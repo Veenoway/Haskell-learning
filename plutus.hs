@@ -45,3 +45,6 @@ endpoints = (give' `select` grab') >> endpoints
     where 
         give' = endpoint @"give" >>= give
         grab' = endpoint @"grab" >> grab
+
+mkSchemaDefinitions ''GiftSchema
+mkKnownCurrencies []

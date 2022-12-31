@@ -11,3 +11,4 @@ in_range' min max x =
 
 -- :t return the type of an expression or function 
 -- add () for operator ex : :t (+)
+

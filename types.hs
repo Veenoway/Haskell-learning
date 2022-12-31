@@ -17,4 +17,8 @@
 -- < Lower than
 -- >= Greather or egual to
 -- <= Lower or equal to 
--- :info give the priority, but it's often better to use
+-- :info give the priority, but it's often better to use 
+-- !! give the index of element in a lists
+-- : append a item to the front of the list
+-- [..] create a range list ( [4...15])
+-- <- List comprehension generator 
